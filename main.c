@@ -1,11 +1,3 @@
-/*
- * Copyright (C) 2018 Inria
- *
- * This file is subject to the terms and conditions of the GNU Lesser
- * General Public License v2.1. See the file LICENSE in the top level
- * directory for more details.
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -20,7 +12,7 @@
 #include "net/loramac.h"      //lora
 #include "semtech_loramac.h"  //lora
 
-#define PERIOD              (60U) //(18000U)      //sending messages period in s
+#define PERIOD              (18000U)      //sending messages period in s
 #define THRESHOLD	          1000                 //humidity threshold
 
 #define SENDER_PRIO         (THREAD_PRIORITY_MAIN - 1)
