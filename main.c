@@ -78,7 +78,6 @@ static void _send_message(void)
     semtech_loramac_recv(&loramac);
 }
 
-
 static void *sender(void *arg)
 {
     (void)arg;
@@ -117,7 +116,6 @@ static void init_lora(void) {
   // Use a fast datarate, e.g. BW125/SF7 in EU868
   semtech_loramac_set_dr(&loramac, LORAMAC_DR_5);
 }
-
 
 int main(void)
 {
